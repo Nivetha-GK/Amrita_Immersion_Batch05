@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Prana Kanth",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 73.55,
+      "left": -25.25,
+      "attrs": { "env": "micropython-20241129-v1.24.1" }
+    },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -56.1, "left": -71.3, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": 27.45, "left": 132.62, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": 4, "left": -199.38, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GND.8", "ir1:GND", "black", [ "h0" ] ],
+    [ "pir1:GND", "pico:GND.8", "black", [ "v0" ] ],
+    [ "ultrasonic1:GND", "pico:GND.8", "black", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "pico:GP2", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "pico:GP3", "green", [ "v0" ] ],
+    [ "pir1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "ir1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "pir1:OUT", "pico:GP4", "green", [ "v0" ] ],
+    [ "ir1:DAT", "pico:GP5", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

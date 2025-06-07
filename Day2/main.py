@@ -6,6 +6,7 @@ TRIG = Pin(2, Pin.OUT)
 ECHO = Pin(3, Pin.IN)
 PIR = Pin(4, Pin.IN)
 IR = Pin(5, Pin.IN)
+BUZZER = Pin(6, Pin.OUT)
 
 # ===== Function to measure distance =====
 def measure_distance():
@@ -25,4 +26,12 @@ while True:
     ir_value = IR.value()
 
     print(f"Distance: {distance:.2f} cm, PIR: {pir_value}, IR: {ir_value}")
-    time.sleep(10)
+
+    # ===== Buzzer Alert Condition =====
+    if distance < 38 and pir_value == 1 and ir_value == 1:
+        BUZZER.on()
+        print("⚠ ALERT: Buzzer ON")
+    else:
+        BUZZER.off()
+
+    time.sleep(2)

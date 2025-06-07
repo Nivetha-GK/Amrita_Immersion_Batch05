@@ -25,4 +25,4 @@ while True:
     ir_value = IR.value()
 
     print(f"Distance: {distance:.2f} cm, PIR: {pir_value}, IR: {ir_value}")
-    time.sleep(1)
+    time.sleep(10)

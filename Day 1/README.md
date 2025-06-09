@@ -1,16 +1,39 @@
- Day 1 Summary – Design Thinking & Use Case Framing
+# Day 1 – Design Thinking & Product Failure Analysis
 
-    Design Thinking Introduction:
-    Understood the 5 stages – Empathize, Define, Ideate, Prototype, Test.
+This section documents the activities and insights gained on the first day, focusing on human-centered innovation through design thinking and failure analysis of electric vehicles (EVs).
 
-    Use Case Framing:
-    Selected problem: Safe navigation for factory AGVs using sensors and ML.
+---
 
-    Case Study Activity:
-    Analyzed a machine failure prediction scenario to understand sensor-based data use in predictive maintenance.
+## Task 1: Design Thinking Session
 
-    Problem Identification:
-    Defined core challenges: real-time obstacle detection, human presence, and low-latency path correction.
+Topic: Introduction to Human-Centered Product Design
 
-    Outcome:
-    Framed a real-world industrial automation problem integrating Embedded Systems + Cloud + ML.
+We participated in a lecture  on *Design Thinking*, exploring how empathy, ideation, and iterative prototyping drive innovation. Key takeaways include:
+
+* Different phases of Design Thinking
+* Understanding user needs and pain points
+* Defining clear problem statements
+* Ideating and prioritizing feasible solutions
+* Emphasis on low-cost, scalable design principles
+
+---
+
+## Task 2: Product Failure Estimation – EV Scooter
+
+Topic: Electric Scooter (e.g., OLA S1) – Predictive Failure Modeling
+
+We analyzed the *failure modes of electric scooters*, identifying critical components and parameters that impact performance and reliability. The focus was on:
+
+* Collecting key parameters: battery, motor, SoC, vibration, brake response, etc.
+* Structuring a dataset for machine learning-based failure prediction
+* Mapping real-time monitoring needs and expected failure scenarios
+
+---
+
+## Outcomes
+
+* Identified key hardware and software failure points in EVs
+* Built a foundation for predictive maintenance using sensor data
+* Set the groundwork for building a synthetic dataset and ML forecasting models
+
+---
